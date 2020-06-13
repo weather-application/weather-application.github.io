@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee|Hind|PT+Sans|Pacifico|Poppins|Lobster");
+
+:root {
+    --lobster: "Lobster", cursive;
+  }
+  
+.navbar {
+    background-color: #0b2b3d;
+  }
+
+.navbar-brand {
+    padding-left: 5px;
+    font-family: var(--lobster);
+    font-size: 2rem;
+}

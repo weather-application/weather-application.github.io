@@ -1,0 +1,41 @@
+{
+    "name": "Weather",
+    "short_name": "Weather",
+    "icons": [
+      {
+        "src": "/src/icons/icon-96x96.png",
+        "type": "image/png",
+        "sizes": "96x96"
+      },
+      {
+        "src": "/src/icons/icon-144x144.png",
+        "type": "image/png",
+        "sizes": "144x144"
+      },
+      {
+        "src": "/src/icons/icon-192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/src/icons/icon-384x384.png",
+        "type": "image/png",
+        "sizes": "384x384"
+      },
+      {
+        "src": "/src/icons/icon-512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/index.html",
+    "scope": ".",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "background_color": "#fff",
+    "theme_color": "#3f51b5",
+    "description": "Weather.",
+    "dir": "ltr",
+    "lang": "en-US"
+  }
+  
