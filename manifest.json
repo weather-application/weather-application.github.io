@@ -33,7 +33,7 @@
     "display": "standalone",
     "orientation": "portrait-primary",
     "background_color": "#fff",
-    "theme_color": "#317EFB"
+    "theme_color": "#317EFB",
     "dir": "ltr",
     "lang": "en-US"
   }
