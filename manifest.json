@@ -34,7 +34,6 @@
     "orientation": "portrait-primary",
     "background_color": "#fff",
     "theme_color": "#317EFB"
-    "description": "Weather.",
     "dir": "ltr",
     "lang": "en-US"
   }
