@@ -1,5 +1,6 @@
-var CACHE_STATIC_NAME = 'static-v2';
-var CACHE_DYNAMIC_NAME = 'dynamic-v3';
+
+var CACHE_STATIC_NAME = 'static-v1';
+var CACHE_DYNAMIC_NAME = 'dynamic-v2';
 
 self.addEventListener('install', function(event) {
   console.log('[Service Worker] Installing Service Worker ...', event);
@@ -8,7 +9,7 @@ self.addEventListener('install', function(event) {
       .then(function(cache) {
         console.log('[Service Worker] Precaching App Shell');
         cache.addAll([
-          '/',
+            '/',
             '/index.html',
             '/src/css/app.css',
             '/src/js/app.js',
@@ -59,3 +60,4 @@ self.addEventListener('fetch', function(event) {
         }
       })
   );
+});
