@@ -24,6 +24,7 @@ function init(resultFromServer) {
     switch (resultFromServer.weather[0].main) {
             case 'Clear':
             document.body.style.backgroundImage = "url('img/clearPicture.jpg')";
+            document.body.style.color="Red";
             break;
         
         case 'Clouds':
