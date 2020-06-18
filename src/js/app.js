@@ -19,7 +19,15 @@ function searchWeather(searchTerm) {
     });
    
 }
-
+let weatherDescriptionHeader = document.getElementById('weatherDescriptionHeader');
+    let temperature = document.getElementById('temperature');
+    let humidity = document.getElementById('humidity');
+    let windSpeed = document.getElementById('windSpeed');
+    let cityHeader = document.getElementById('cityHeader');
+    let tempMin = document.getElementById('tempMin');
+    let tempMax = document.getElementById('tempMax');
+    let feelsLike = document.getElementById('feelsLike');
+    let weatherIcon = document.getElementById('documentIconImg');
 function init(resultFromServer) {
     switch (resultFromServer.weather[0].main) {
             case 'Clear':
@@ -54,15 +62,7 @@ function init(resultFromServer) {
         
     }
 
-    let weatherDescriptionHeader = document.getElementById('weatherDescriptionHeader');
-    let temperature = document.getElementById('temperature');
-    let humidity = document.getElementById('humidity');
-    let windSpeed = document.getElementById('windSpeed');
-    let cityHeader = document.getElementById('cityHeader');
-    let tempMin = document.getElementById('tempMin');
-    let tempMax = document.getElementById('tempMax');
-    let feelsLike = document.getElementById('feelsLike');
-    let weatherIcon = document.getElementById('documentIconImg');
+    
     weatherIcon.src = 'http://openweathermap.org/img/w/' + resultFromServer.weather[0].icon + '.png';
 
     let resultDescription = resultFromServer.weather[0].description;
