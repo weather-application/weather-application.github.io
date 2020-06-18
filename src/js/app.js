@@ -23,28 +23,28 @@ function searchWeather(searchTerm) {
 function init(resultFromServer) {
     switch (resultFromServer.weather[0].main) {
             case 'Clear':
-            document.body.style.backgroundImage = "url('img/clear.jpg')";
+            document.body.style.backgroundImage = "url('img/clearPicture.jpg')";
             break;
         
         case 'Clouds':
-            document.body.style.backgroundImage = "url('img/cloudy.jpg')";
+            document.body.style.backgroundImage = "url('img/cloudyPicture.jpg')";
             break;
 
         case 'Rain':
         case 'Drizzle':
-            document.body.style.backgroundImage = "url('img/rain.jpg')";
+            document.body.style.backgroundImage = "url('img/rainPicture.jpg')";
             break;
 
         case 'Mist':
-            document.body.style.backgroundImage = "url('img/mist.jpg')";
+            document.body.style.backgroundImage = "url('img/mistPicture.jpg')";
             break;    
         
         case 'Thunderstorm':
-            document.body.style.backgroundImage = "url('img/storm.jpg')";
+            document.body.style.backgroundImage = "url('img/stormPicture.jpg')";
             break;
         
         case 'Snow':
-            document.body.style.backgroundImage = "url('img/snow.jpg')";
+            document.body.style.backgroundImage = "url('img/snowPicture.jpg')";
             break;
 
         default:
@@ -65,12 +65,12 @@ function init(resultFromServer) {
 
     let resultDescription = resultFromServer.weather[0].description;
     weatherDescriptionHeader.innerText = resultDescription.charAt(0).toUpperCase() + resultDescription.slice(1);
-    temperature.innerHTML = Math.floor(resultFromServer.main.temp) + '&#176;';
+    temperature.innerHTML = Math.floor(resultFromServer.main.temp) + '&#176;' + 'C';
     windSpeed.innerHTML = 'Wind Speed: ' + Math.floor(resultFromServer.wind.speed) + ' meter/s';
     cityHeader.innerHTML = resultFromServer.name;
     humidity.innerHTML = 'Humidity levels: ' + resultFromServer.main.humidity +  '%';
-    tempMin.innerHTML = 'Temp Min:' + Math.floor(resultFromServer.main.temp_min) + '&#176;';
-    tempMax.innerHTML = 'Temp Max:' + Math.floor(resultFromServer.main.temp_max) + '&#176;';
+    tempMin.innerHTML = 'Temp Min:' + Math.floor(resultFromServer.main.temp_min) + '&#176;' + 'C';
+    tempMax.innerHTML = 'Temp Max:' + Math.floor(resultFromServer.main.temp_max) + '&#176;'+ 'C';
     feelsLike.innerHTML = 'Feels Like:' + Math.floor(resultFromServer.main.feels_like) + '&#176;' ;
     console.log(resultFromServer);
 
