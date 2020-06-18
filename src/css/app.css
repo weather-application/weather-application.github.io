@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Bungee|Hind|PT+Sans|Pacifico|Poppins|Lobster");
 
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
 :root {
     --lobster: "Lobster", cursive;
   }
