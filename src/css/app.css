@@ -1,9 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Bungee|Hind|PT+Sans|Pacifico|Poppins|Lobster");
 
-.responsive {
-  max-width: 100%;
-  height: auto;
-}
+
+body {
+    background-image: url('default.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    font-family: "Palatino", "Book Antiqua", serif;
+
 
 :root {
     --lobster: "Lobster", cursive;
