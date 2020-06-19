@@ -37,6 +37,7 @@ function init(resultFromServer) {
         
         case 'Clouds':
             document.body.style.backgroundImage = "url('img/cloudyPicture.jpg')";
+             document.getElementById("temperature").style.color  = "green"; 
             break;
 
         case 'Rain':
