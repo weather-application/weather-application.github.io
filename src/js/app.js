@@ -19,7 +19,7 @@ function searchWeather(searchTerm) {
     });
    
 }
-let weatherDescriptionHeader = document.getElementById('weatherDescriptionHeader');
+    let weatherDescriptionHeader = document.getElementById('weatherDescriptionHeader');
     let temperature = document.getElementById('temperature');
     let humidity = document.getElementById('humidity');
     let windSpeed = document.getElementById('windSpeed');
@@ -28,12 +28,11 @@ let weatherDescriptionHeader = document.getElementById('weatherDescriptionHeader
     let tempMax = document.getElementById('tempMax');
     let feelsLike = document.getElementById('feelsLike');
     let weatherIcon = document.getElementById('documentIconImg');
+
 function init(resultFromServer) {
     switch (resultFromServer.weather[0].main) {
             case 'Clear':
             document.body.style.backgroundImage = "url('img/clearPicture.jpg')";
-            document.getElementById("temperature").style.color  
-                                = "green"; 
             break;
         
         case 'Clouds':
@@ -75,6 +74,8 @@ function init(resultFromServer) {
     tempMax.innerHTML = 'Temp Max:' + Math.floor(resultFromServer.main.temp_max) + '&#176;'+ 'C';
     feelsLike.innerHTML = 'Feels Like:' + Math.floor(resultFromServer.main.feels_like) + '&#176;' ;
     console.log(resultFromServer);
+    
+ 
 
     
 }
