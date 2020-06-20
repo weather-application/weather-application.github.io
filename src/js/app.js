@@ -33,11 +33,12 @@ function init(resultFromServer) {
     switch (resultFromServer.weather[0].main) {
             case 'Clear':
             document.body.style.backgroundImage = "url('img/clearPicture.jpg')";
+            document.getElementById("temperature").style.color  = "red"; 
             break;
         
         case 'Clouds':
             document.body.style.backgroundImage = "url('img/cloudyPicture.jpg')";
-             document.getElementById("temperature").style.color  = "green"; 
+            document.getElementById("temperature").style.color  = "green"; 
             break;
 
         case 'Rain':
