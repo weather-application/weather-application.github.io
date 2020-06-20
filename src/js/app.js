@@ -30,7 +30,16 @@ function searchWeather(searchTerm) {
     let weatherIcon = document.getElementById('documentIconImg');
 
 function init(resultFromServer) {
-   console.log(resultFromServer.weather[0].main);
+    if (resultFromServer.weather[0].main == "Clear" ) 
+    {
+        document.body.style.backgroundImage = "url('img/clearPicture.jpg')";
+    }
+    else if(resultFromServer.weather[0].main == "Clouds")
+    {
+         document.body.style.backgroundImage = "url('img/cloudyPicture.jpg')";
+         document.getElementById("temperature").style.color  = "green"; 
+    }
+   
 
     
     weatherIcon.src = 'http://openweathermap.org/img/w/' + resultFromServer.weather[0].icon + '.png';
