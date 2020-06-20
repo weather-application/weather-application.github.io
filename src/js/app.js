@@ -5,6 +5,7 @@ let searchMethod; // q means searching as a string.
 function getSearchMethod(searchTerm) {
     if(searchTerm.length === 5 && Number.parseInt(searchTerm) + '' === searchTerm)
         searchMethod = 'zip';
+        console.log("a");
     else 
         searchMethod = 'q';
 }
