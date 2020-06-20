@@ -40,7 +40,26 @@ function init(resultFromServer) {
          document.body.style.backgroundImage = "url('img/cloudyPicture.jpg')";
          document.getElementById("temperature").style.color  = "green"; 
     }
-   
+    else if(resultFromServer.weather[0].main == "Rain")
+    {
+         document.body.style.backgroundImage = "url('img/rainPicture.jpg')";
+    }
+    else if(resultFromServer.weather[0].main == "Drizzle")
+    {
+        document.body.style.backgroundImage = "url('img/drizzle.jpg')";
+    }      
+    else if(resultFromServer.weather[0].main == "Mist")
+    {
+        document.body.style.backgroundImage = "url('img/mistPicture.jpg')";
+    }
+    else if(resultFromServer.weather[0].main == "Thunderstorm")
+    {
+        document.body.style.backgroundImage = "url('img/stormPicture.jpg')";
+    }
+    else if(resultFromServer.weather[0].main == "Snow")
+    {
+        document.body.style.backgroundImage = "url('img/snowPicture.jpg')";
+    }
 
     
     weatherIcon.src = 'http://openweathermap.org/img/w/' + resultFromServer.weather[0].icon + '.png';
