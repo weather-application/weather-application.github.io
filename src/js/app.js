@@ -14,9 +14,10 @@ function searchWeather(searchTerm) {
     fetch(`https://api.openweathermap.org/data/2.5/weather?${searchMethod}=${searchTerm}&APPID=${appId}&units=${units}`)
         .then((result) => {
             return result.json();
-            console.log("a");
+            
         }).then((res) => {
             init(res);
+            console.log("a");
     });
    
 }
