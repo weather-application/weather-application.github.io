@@ -5,7 +5,6 @@ let searchMethod; // q means searching as a string.
 function getSearchMethod(searchTerm) {
     if(searchTerm.length === 5 && Number.parseInt(searchTerm) + '' === searchTerm)
         searchMethod = 'zip';
-        console.log("a");
     else 
         searchMethod = 'q';
 }
@@ -15,6 +14,7 @@ function searchWeather(searchTerm) {
     fetch(`https://api.openweathermap.org/data/2.5/weather?${searchMethod}=${searchTerm}&APPID=${appId}&units=${units}`)
         .then((result) => {
             return result.json();
+            console.log("a");
         }).then((res) => {
             init(res);
     });
