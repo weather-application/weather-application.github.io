@@ -33,6 +33,7 @@ function init(resultFromServer) {
     if (resultFromServer.weather[0].main == "Clear" ) 
     {
         document.body.style.backgroundImage = "url('img/clearPicture.jpg')";
+         document.getElementById("temperature").style.color  = "red";
     }
     else if(resultFromServer.weather[0].main == "Clouds")
     {
