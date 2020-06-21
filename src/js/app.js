@@ -103,3 +103,6 @@ window.addEventListener('beforeinstallprompt', function(event) {
   deferredPrompt = event;
   return false;
 });
+$(window).on("load",function(){
+  $(".loader-wrapper").fadeOut("slow");
+});
