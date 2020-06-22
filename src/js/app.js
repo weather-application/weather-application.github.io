@@ -17,7 +17,7 @@ function searchWeather(searchTerm) {
             
         }).then((res) => {
             init(res);
-            console.log("a");
+            
     });
    
 }
