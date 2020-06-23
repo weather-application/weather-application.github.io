@@ -1,7 +1,7 @@
 let appId = 'afb4765b403008cec2c721a6e50347a4';
 let units = 'metric'; 
 let searchMethod; // q means searching as a string.
-
+let errorMessage = document.getElementById('errorMessage');
 function getSearchMethod(searchTerm) {
     if(searchTerm.length === 5 && Number.parseInt(searchTerm) + '' === searchTerm)
         searchMethod = 'zip';
@@ -17,6 +17,8 @@ function searchWeather(searchTerm) {
             
         }).then((res) => {
             init(res);
+        // }).catch(() => {
+        //         errorMessage.innerHTML="Please search for a valid city "
             
     });
    
@@ -63,6 +65,7 @@ function init(resultFromServer) {
         document.body.style.backgroundImage = "url('img/snowPicture.jpg')";
     }
 
+
     
     weatherIcon.src = 'http://openweathermap.org/img/w/' + resultFromServer.weather[0].icon + '.png';
 
@@ -85,6 +88,7 @@ document.getElementById('searchBtn').addEventListener('click', () => {
     let searchTerm = document.getElementById('searchInput').value;
     if(searchTerm)
         searchWeather(searchTerm);
+    
 });
 
 

@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Bungee|Hind|PT+Sans|Pacifico|Poppins|Lobster");
 
-
-body {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
 :root {
     --lobster: "Lobster", cursive;
   }
@@ -20,3 +13,18 @@ body {
     font-family: var(--lobster);
     font-size: 2rem;
 }
+body {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+.responsive {
+  width: 20%;
+  height: auto;
+}
+
+
+
+
